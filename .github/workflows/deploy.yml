@@ -1,0 +1,7 @@
+run-name: Deploy to Github Pages
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
