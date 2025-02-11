@@ -1,5 +1,7 @@
+import { NavBarBase } from './components/NavBar/NavBarBase';
+
 export function App() {
     return (
-        <h1>This is JB</h1>
+        <NavBarBase />
     )
 }
