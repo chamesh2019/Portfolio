@@ -1,4 +1,6 @@
-export function TitleText() {
+import React from "react";
+
+export const TitleText: React.FC = () => {
   return (
     <div>
       <div className="text-left text-white text-3xl font-semibold">CS Undergraduate</div>

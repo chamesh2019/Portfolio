@@ -5,7 +5,11 @@
     font-family: "Inter", sans-serif;
 }
 
+:root {
+    --background-color: #101525;
+}
+
 body {
-    background-color: #101525;
+    background-color: var(--background-color);
     height: 100vh;
 }
