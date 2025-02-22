@@ -6,8 +6,10 @@ export function App() {
   return (
     <>
       <NavBarBase />
-      <HeroSection />
-      <AboutMe />
+      <div className="scroll-container">
+        <HeroSection />
+        <AboutMe />
+      </div>
     </>
   );
 }
