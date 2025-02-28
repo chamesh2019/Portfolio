@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
 * {
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 :root {
-    --background-color: #101525;
+  --background-color: #101525;
 }
 
 body {
-    background-color: var(--background-color);
-    height: 100vh;
+  background-color: var(--background-color);
+  height: 100vh;
 }
 
 .scroll-container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.scroll-container > * {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% center;
   }
-  
-  .scroll-container > * {
-    scroll-snap-align: start;
-    height: 100vh;
+  100% {
+    background-position: -200% center;
   }
+}
+
+.gradient {
+    background: linear-gradient(
+        to right,
+        rgba(98, 0, 234, 0.3),
+        rgba(236, 64, 122, 0.3),
+        rgba(98, 0, 234, 0.3)
+    );
+    background-size: 200%;
+    animation: gradient 5s linear infinite;
+}
+
+.tile {
+    background-color: #101525;
+}
